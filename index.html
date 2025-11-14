@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoCare Pro | Premium Car Repair & Mechanical Services</title>
+    <title>AutoFix Pro | Premium Car Repair & Mechanical Services</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
@@ -150,6 +150,12 @@
             font-weight: 500;
         }
 
+        .nav-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
         .nav-links {
             display: flex;
             list-style: none;
@@ -205,7 +211,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+            background: url('https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
             background-size: cover;
             background-position: center;
             opacity: 0.2;
@@ -764,7 +770,7 @@
             }
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             .nav-links {
                 display: none;
                 position: absolute;
@@ -791,6 +797,12 @@
                 display: block;
             }
 
+            .nav-container {
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.8rem;
             }
@@ -815,6 +827,39 @@
             .cta h2 {
                 font-size: 2.5rem;
             }
+
+            .header-container {
+                flex-wrap: wrap;
+            }
+
+            .logo {
+                flex: 1;
+            }
+
+            .nav-container {
+                order: 3;
+                width: 100%;
+                margin-top: 1rem;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -827,21 +872,23 @@
                     <i class="fas fa-car"></i>
                 </div>
                 <div class="logo-text">
-                    <div class="logo-main">AutoCare Pro</div>
+                    <div class="logo-main">AutoFix Pro</div>
                     <div class="logo-sub">Premium Car Repair Services</div>
                 </div>
             </div>
-            <div class="mobile-menu">
-                <i class="fas fa-bars"></i>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="https://wa.me/1234567890" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Book Now</a>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://wa.me/1234567890" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Book Now</a></li>
-            </ul>
         </div>
     </header>
 
@@ -901,7 +948,7 @@
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1603712610496-5362a2c93c88?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Engine Repair">
+                        <img src="https://images.unsplash.com/photo-1622737133809-d95047b9e673?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Engine Repair">
                     </div>
                     <div class="service-icon">
                         <i class="fas fa-tools"></i>
@@ -937,7 +984,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1622737133809-d95047b9e673?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Transmission">
+                        <img src="https://images.unsplash.com/photo-1632852901095-cc5c0e2e1e1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Transmission">
                     </div>
                     <div class="service-icon">
                         <i class="fas fa-cogs"></i>
@@ -961,7 +1008,7 @@
     <section class="about" id="about">
         <div class="container about-container">
             <div class="about-content">
-                <h2>Why Choose AutoCare Pro?</h2>
+                <h2>Why Choose AutoFix Pro?</h2>
                 <p>With over 15 years of experience in the automotive industry, our certified technicians provide reliable and efficient repair services using the latest diagnostic tools and technology.</p>
                 <div class="features">
                     <div class="feature">
@@ -1014,7 +1061,7 @@
             <div class="testimonials-container">
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        "AutoCare Pro fixed my transmission issue when three other shops couldn't figure it out. Their technicians are true experts, and the service was exceptional."
+                        "AutoFix Pro fixed my transmission issue when three other shops couldn't figure it out. Their technicians are true experts, and the service was exceptional."
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">
@@ -1028,7 +1075,7 @@
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        "I've been taking my cars to AutoCare Pro for years. They're honest, reliable, and their work is always top-notch. I wouldn't trust my vehicles to anyone else."
+                        "I've been taking my cars to AutoFix Pro for years. They're honest, reliable, and their work is always top-notch. I wouldn't trust my vehicles to anyone else."
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">
@@ -1042,7 +1089,7 @@
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        "When my brakes started making noise, I brought my car to AutoCare Pro. They diagnosed the issue quickly, explained everything clearly, and had me back on the road safely the same day."
+                        "When my brakes started making noise, I brought my car to AutoFix Pro. They diagnosed the issue quickly, explained everything clearly, and had me back on the road safely the same day."
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">
@@ -1062,7 +1109,7 @@
     <section class="cta" id="contact">
         <div class="container cta-content">
             <h2>Ready for Professional Car Care?</h2>
-            <p>Schedule an appointment today and experience the AutoCare Pro difference. Your vehicle deserves the best care.</p>
+            <p>Schedule an appointment today and experience the AutoFix Pro difference. Your vehicle deserves the best care.</p>
             <a href="https://wa.me/1234567890?text=Hi,%20I'd%20like%20to%20schedule%20an%20appointment" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Book Appointment Now</a>
         </div>
     </section>
@@ -1072,7 +1119,7 @@
         <div class="container">
             <div class="footer-container">
                 <div class="footer-col">
-                    <h3>AutoCare Pro</h3>
+                    <h3>AutoFix Pro</h3>
                     <p>Your trusted partner for premium automotive repair and maintenance services.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -1106,13 +1153,13 @@
                     <ul>
                         <li><a href="#"><i class="fas fa-map-marker-alt"></i> 123 Auto Street, Repair City</a></li>
                         <li><a href="tel:+1234567890"><i class="fas fa-phone"></i> (123) 456-7890</a></li>
-                        <li><a href="mailto:info@autocarepro.com"><i class="fas fa-envelope"></i> info@autocarepro.com</a></li>
+                        <li><a href="mailto:info@autofixpro.com"><i class="fas fa-envelope"></i> info@autofixpro.com</a></li>
                         <li><a href="#"><i class="fas fa-clock"></i> Mon-Fri: 8am-6pm, Sat: 9am-4pm</a></li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 AutoCare Pro. All Rights Reserved.</p>
+                <p>&copy; 2025-2026 AutoFix Pro. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
