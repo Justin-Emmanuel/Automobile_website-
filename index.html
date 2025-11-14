@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoFix Pro | Professional Auto Repair Services</title>
+    <title>AutoFix Pro | Professional Car Repair & Mechanical Services</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
@@ -343,6 +343,59 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 2s infinite, dance 3s infinite;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            animation: none;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        @keyframes dance {
+            0%, 100% {
+                transform: translateY(0) rotate(0);
+            }
+            25% {
+                transform: translateY(-10px) rotate(-5deg);
+            }
+            50% {
+                transform: translateY(-5px) rotate(5deg);
+            }
+            75% {
+                transform: translateY(-10px) rotate(-5deg);
+            }
+        }
+
         /* Responsive Design */
         @media (max-width: 992px) {
             .about-container {
@@ -383,6 +436,14 @@
             .hero h1 {
                 font-size: 2.5rem;
             }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 25px;
+            }
         }
     </style>
 </head>
@@ -392,7 +453,7 @@
         <div class="container header-container">
             <div class="logo">
                 <i class="fas fa-car"></i>
-                <span>AutoFix Pro</span>
+                <span>AutoFix Pro | Car Repair</span>
             </div>
             <div class="mobile-menu">
                 <i class="fas fa-bars"></i>
@@ -410,7 +471,7 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
-            <h1>Professional Auto Repair & Mechanical Services</h1>
+            <h1>Professional Car Repair & Mechanical Services</h1>
             <p>We provide top-quality automotive repair and maintenance services with certified technicians and state-of-the-art equipment.</p>
             <a href="#contact" class="btn">Get Service Now</a>
         </div>
@@ -522,9 +583,9 @@
     <!-- CTA Section -->
     <section class="cta" id="contact">
         <div class="container">
-            <h2>Need Auto Repair Services?</h2>
+            <h2>Need Car Repair Services?</h2>
             <p>Schedule an appointment today and let our expert technicians take care of your vehicle.</p>
-            <a href="tel:+1234567890" class="btn">Call Now: (123) 456-7890</a>
+            <a href="https://wa.me/1234567890" class="btn"><i class="fab fa-whatsapp"></i> Contact on WhatsApp</a>
         </div>
     </section>
 
@@ -533,13 +594,13 @@
         <div class="container">
             <div class="footer-container">
                 <div class="footer-col">
-                    <h3>AutoFix Pro</h3>
+                    <h3>AutoFix Pro | Car Repair</h3>
                     <p>Your trusted partner for all automotive repair and maintenance needs.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/1234567890"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
@@ -577,6 +638,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script>
         // Mobile Menu Toggle
